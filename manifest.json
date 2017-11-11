@@ -1,0 +1,21 @@
+{
+  "manifest_version" : 2,
+
+  "name" : "Currency Calculator",
+  "description" : "An extension that allows the user to quickly convert currencies.",
+  "version" : "1.0",
+
+  "browser_action" : {
+    "default_icon" : "icon.png",
+    "default_popup" : "popup.html"
+  },
+
+  "permissions" : [
+    "activeTab",
+    "tabs",
+    "storage",
+    "https://api.fixer.io/*",
+    "http://ip-api.com/json"
+  ]
+
+  }

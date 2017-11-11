@@ -1,0 +1,58 @@
+body {
+    min-width: 200px;
+    min-height: 100px;
+    margin: 0;
+    text-align: center;
+}
+div {
+    margin: 0;
+    padding: 0;
+}
+
+div p {
+    display: inline-block;
+}
+
+.defaultStuff {
+    background: red;
+    display: none;
+}
+input[type="text"]{
+    max-width: 100px;
+    border: 3px solid;
+    padding: 2%;
+}
+select {
+    margin: 1% auto;
+    max-height: 31px;
+    border: 3px solid grey;
+    padding: 2%;
+}
+input[type="button"]{
+    border: 3px solid grey;
+    background: none;
+    padding: 2%;
+}
+input[type="button"]:hover {
+    border: 3px solid seagreen;
+}
+#firstCurrency {
+    border-color: seagreen;
+}
+#submit {
+}
+#switch {
+}
+
+#button {
+    margin: 0;
+}
+
+#changeDefaults {
+    margin: 0;
+    margin-top: 2%;
+    margin-left: 7%;
+    min-width: 58px;
+    display: inline-block;
+    padding: 2%;
+}

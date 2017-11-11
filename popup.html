@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Idk</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="popup.js"></script>
+</head>
+<body>
+<form>
+    <div id="first">
+        <input type="text" placeholder="First currency" id="firstCurrency">
+        <select id="selectFirstCurrency">
+            <option value="AUD" id="AUD1">AUD</option>
+            <option value="BGN" id="BGN1">BGN</option>
+            <option value="BRL" id="BRL1">BRL</option>
+            <option value="CAD" id="CAD1">CAD</option>
+            <option value="CHF" id="CHF1">CHF</option>
+            <option value="CNY" id="CNY1">CNY</option>
+            <option value="CZK" id="CZK1">CZK</option>
+            <option value="DKK" id="DKK1">DKK</option>
+            <option value="GBP" id="GBP1">GBP</option>
+            <option value="HKD" id="HKD1">HKD</option>
+            <option value="HRK" id="HRK1">HRK</option>
+            <option value="HUF" id="HUF1">HUF</option>
+            <option value="IDR" id="IDR1">IDR</option>
+            <option value="ILS" id="ILS1">ILS</option>
+            <option value="INR" id="INR1">INR</option>
+            <option value="JPY" id="JPY1">JPY</option>
+            <option value="KRW" id="KRW1">KRW</option>
+            <option value="MXN" id="MXN1">MXN</option>
+            <option value="MYR" id="MYR1">MYR</option>
+            <option value="NOK" id="NOK1">NOK</option>
+            <option value="NZD" id="NZD1">NZD</option>
+            <option value="PHP" id="PHP1">PHP</option>
+            <option value="PLN" id="PLN1">PLN</option>
+            <option value="RON" id="RON1">RON</option>
+            <option value="RUB" id="RUB1">RUB</option>
+            <option value="SEK" id="SEK1">SEK</option>
+            <option value="THB" id="THB1">THB</option>
+            <option value="TRY" id="TRY1">TRY</option>
+            <option value="ZAR" id="ZAR1">ZAR</option>
+            <option value="EUR" id="EUR1">EUR</option>
+            <option value="USD" id="USD1" selected>USD</option>
+        </select>
+    </div>
+    <div id="second">
+        <input type="text" placeholder="Second currency" id="secondCurrency" disabled>
+        <select id="selectSecondCurrency">
+            <option value="AUD" id="AUD2">AUD</option>
+            <option value="BGN" id="BGN2">BGN</option>
+            <option value="BRL" id="BRL2">BRL</option>
+            <option value="CAD" id="CAD2">CAD</option>
+            <option value="CHF" id="CHF2">CHF</option>
+            <option value="CNY" id="CNY2">CNY</option>
+            <option value="CZK" id="CZK2">CZK</option>
+            <option value="DKK" id="DKK2">DKK</option>
+            <option value="GBP" id="GBP2">GBP</option>
+            <option value="HKD" id="HKD2">HKD</option>
+            <option value="HRK" id="HRK2">HRK</option>
+            <option value="HUF" id="HUF2">HUF</option>
+            <option value="IDR" id="IDR2">IDR</option>
+            <option value="ILS" id="ILS2">ILS</option>
+            <option value="INR" id="INR2">INR</option>
+            <option value="JPY" id="JPY2">JPY</option>
+            <option value="KRW" id="KRW2">KRW</option>
+            <option value="MXN" id="MXN2">MXN</option>
+            <option value="MYR" id="MYR2">MYR</option>
+            <option value="NOK" id="NOK2" selected>NOK</option>
+            <option value="NZD" id="NZD2">NZD</option>
+            <option value="PHP" id="PHP2">PHP</option>
+            <option value="PLN" id="PLN2">PLN</option>
+            <option value="RON" id="RON2">RON</option>
+            <option value="RUB" id="RUB2">RUB</option>
+            <option value="SEK" id="SEK2">SEK</option>
+            <option value="THB" id="THB2">THB</option>
+            <option value="TRY" id="TRY2">TRY</option>
+            <option value="ZAR" id="ZAR2">ZAR</option>
+            <option value="EUR" id="EUR2">EUR</option>
+            <option value="USD" id="USD2">USD</option>
+        </select>
+    </div>
+    <div id="button">
+        <input type="button" id="submit" value="calculate">
+        <input type="button" id="switch" value="↕">
+        <p id="changeDefaults">Defaults▼</p>
+    </div>
+    <div class="defaultStuff">
+    <div id="setFirst">
+        <p>Default 1:</p>
+        <select id="selectFirstDefault">
+            <option value="AUD" id="setAUD1">AUD</option>
+            <option value="BGN" id="setBGN1">BGN</option>
+            <option value="BRL" id="setBRL1">BRL</option>
+            <option value="CAD" id="setCAD1">CAD</option>
+            <option value="CHF" id="setCHF1">CHF</option>
+            <option value="CNY" id="setCNY1">CNY</option>
+            <option value="CZK" id="setCZK1">CZK</option>
+            <option value="DKK" id="setDKK1">DKK</option>
+            <option value="GBP" id="setGBP1">GBP</option>
+            <option value="HKD" id="setHKD1">HKD</option>
+            <option value="HRK" id="setHRK1">HRK</option>
+            <option value="HUF" id="setHUF1">HUF</option>
+            <option value="IDR" id="setIDR1">IDR</option>
+            <option value="ILS" id="setILS1">ILS</option>
+            <option value="INR" id="setINR1">INR</option>
+            <option value="JPY" id="setJPY1">JPY</option>
+            <option value="KRW" id="setKRW1">KRW</option>
+            <option value="MXN" id="setMXN1">MXN</option>
+            <option value="MYR" id="setMYR1">MYR</option>
+            <option value="NOK" id="setNOK1">NOK</option>
+            <option value="NZD" id="setNZD1">NZD</option>
+            <option value="PHP" id="setPHP1">PHP</option>
+            <option value="PLN" id="setPLN1">PLN</option>
+            <option value="RON" id="setRON1">RON</option>
+            <option value="RUB" id="setRUB1">RUB</option>
+            <option value="SEK" id="setSEK1">SEK</option>
+            <option value="THB" id="setTHB1">THB</option>
+            <option value="TRY" id="setTRY1">TRY</option>
+            <option value="ZAR" id="setZAR1">ZAR</option>
+            <option value="EUR" id="setEUR1">EUR</option>
+            <option value="USD" id="setUSD1">USD</option>
+        </select>
+        </div>
+        <div id="setSecond">
+        <p>Default 2:</p>
+        <select id="selectSecondDefault">
+            <option value="AUD" id="setAUD2">AUD</option>
+            <option value="BGN" id="setBGN2">BGN</option>
+            <option value="BRL" id="setBRL2">BRL</option>
+            <option value="CAD" id="setCAD2">CAD</option>
+            <option value="CHF" id="setCHF2">CHF</option>
+            <option value="CNY" id="setCNY2">CNY</option>
+            <option value="CZK" id="setCZK2">CZK</option>
+            <option value="DKK" id="setDKK2">DKK</option>
+            <option value="GBP" id="setGBP2">GBP</option>
+            <option value="HKD" id="setHKD2">HKD</option>
+            <option value="HRK" id="setHRK2">HRK</option>
+            <option value="HUF" id="setHUF2">HUF</option>
+            <option value="IDR" id="setIDR2">IDR</option>
+            <option value="ILS" id="setILS2">ILS</option>
+            <option value="INR" id="setINR2">INR</option>
+            <option value="JPY" id="setJPY2">JPY</option>
+            <option value="KRW" id="setKRW2">KRW</option>
+            <option value="MXN" id="setMXN2">MXN</option>
+            <option value="MYR" id="setMYR2">MYR</option>
+            <option value="NOK" id="setNOK2">NOK</option>
+            <option value="NZD" id="setNZD2">NZD</option>
+            <option value="PHP" id="setPHP2">PHP</option>
+            <option value="PLN" id="setPLN2">PLN</option>
+            <option value="RON" id="setRON2">RON</option>
+            <option value="RUB" id="setRUB2">RUB</option>
+            <option value="SEK" id="setSEK2">SEK</option>
+            <option value="THB" id="setTHB2">THB</option>
+            <option value="TRY" id="setTRY2">TRY</option>
+            <option value="ZAR" id="setZAR2">ZAR</option>
+            <option value="EUR" id="setEUR2">EUR</option>
+            <option value="USD" id="setUSD2">USD</option>
+        </select>
+    </div>
+        <div id="saveDefaults">
+            <input type="button" id="saveButton" value="Save">
+            <input type="button" id="cancelButton" value="Cancel">
+        </div>
+    </div>
+</form>
+</body>
+</html>
